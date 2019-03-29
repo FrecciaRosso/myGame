@@ -1,0 +1,261 @@
+.game-page {
+	background: url('../images/background.jpg');
+	background-size: cover;
+}
+
+body {
+	min-height: 925px;
+	min-width: 1500px;
+	text-align: center;
+}
+
+aside {
+	display: inline-block;
+	float: left;
+}
+
+aside button {
+	display: block;
+}
+
+header, main, footer {
+	max-width: 1600px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.buttons {
+	border: none;
+	height: 40px;
+	font-weight: bold;
+	width: 100px;
+}
+
+.settings-buttons {
+	background-color: rgb(46, 203, 112);
+}
+
+.settings-buttons:hover {
+	background-color: olivedrab;
+	cursor: pointer;
+	border: 1px solid;
+}
+
+.tom {
+	background: url('../images/tom_option.jpg');
+}
+
+.jerry {
+	background: url('../images/jerry_option.jpg');
+}
+
+.spike {
+	background: url('../images/spike_option.jpg');
+}
+
+.settings-options:hover {
+	background-color: rgba(107, 142, 35, 0.5);
+	cursor: pointer;
+	outline: 1px solid white;
+	height: 100px;
+}
+
+.level-options:hover {
+	background-color: rgba(107, 142, 35, 0.5);
+	cursor: pointer;
+	outline: 1px solid white;
+	height: 40px;
+}
+
+.game-settings {
+	margin-right: 10px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+}
+
+.game-title {
+	display: inline-block;
+	background-color: rgba(46, 203, 112, 0.5);
+	border-radius: 70%;
+}
+
+.new-game-button {
+	float: right;
+	right: 20px;
+}
+
+ .show {
+ 	display: block;	
+ }
+
+ .hide {
+ 	display: none;
+ }
+
+ .greeting-window {
+ 	background-color: rgba(146, 192, 48, 0.9);
+ 	width: 50%;
+ 	right: 25%;
+ 	left: 25%;
+ 	top: 20%;
+ 	max-height: 60%;
+ 	position: absolute;
+ 	padding-left: 20px;
+ 	padding-right: 10px;
+ }
+
+ .greeting-window h2, h3, button {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+ .game-field {
+ 	background-color: rgba(107, 142, 35, 0.5);
+ 	/*width: 1200px;*/
+ 	right: 15%;
+ 	left: 15%;
+ 	top: 30%;
+ 	min-height: 40%;
+ 	position: absolute;
+ }
+
+ .easy, .medium, .hard {
+ 	display: none;
+ }
+
+.cardsTable{
+	display: table;
+	/*width: 100%;*/
+}
+
+.divTable {
+	padding-left: 1.5%;
+}
+
+.divTableRow {
+	display: table-row;
+}
+
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+		-webkit-transform-style: preserve-3d; 
+  	transform-style: preserve-3d;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.easy div.cover, .easy div.card{
+	width: 210px;
+	height: 240px;
+}
+
+.medium div.cover, .medium div.card {
+	width: 158px;
+	height: 180px;
+}
+
+.hard div.cover, .hard div.card {
+	width: 105px;
+	height: 120px;
+}
+
+.cover {
+	position: absolute;
+}
+
+.transform {
+  -webkit-animation: notransform 0.5s 1;
+  animation: notransform 0.5s 1;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
+
+.transformBack {
+  -webkit-animation: notransformBack 0.5s 1;
+  animation: notransformBack 0.5s 1;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes notransform {
+  0% {transform: none;}
+  100% {display: none;}
+}
+@keyframes notransform {
+  0% {transform: none;}
+  100% {visibility: hidden;}
+}
+
+.rotateY {
+  -webkit-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+@-webkit-keyframes notransformBack {
+ 	100% {transform: none;}
+}
+@keyframes notransformBack {
+ 	100% {transform: none;}
+}
+
+.rotateYback {
+  -webkit-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+.divTableCell:hover {
+	cursor: pointer;
+}
+
+.disable-cell {
+	pointer-events: none;
+
+}
+
+.game-over-window {
+ 	background-color: rgba(146, 192, 48, 0.9);
+ 	right: 25%;
+ 	left: 25%;
+ 	top: 20%;
+ 	min-height: 350px;
+ 	min-width: 350px;
+ 	position: absolute;
+ 	padding-left: 20px;
+ 	padding-right: 10px;
+ 	text-align: center;
+ 	display: none;
+ }
+
+ .game-over-window h2, button {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+ .game-over-image {
+ 	width: 270px;
+ 	height: 240px;
+ 	border-radius: 50%; 
+ 	display: block;
+ 	margin: auto;
+ 	margin-bottom: 20px;
+ }
+
+ .timer {
+	height: 40px;
+	font-weight: bold;
+	width: 100px;
+	background-color: rgb(46, 203, 112);
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 40px;
+ }
